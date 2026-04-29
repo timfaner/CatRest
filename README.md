@@ -1,59 +1,61 @@
 # CatRest
 
-一个住在 macOS 菜单栏里的猫咪番茄钟。  
-专注一会儿，猫咪就会跳出来提醒你休息一下。
+A tiny cat Pomodoro timer that lives in your macOS menu bar.  
+Focus for a while, then let the cat pop up and remind you to take a real break.
 
-点击下载➡️ [CarRest.zip](https://github.com/timfaner/CatRest/releases/download/0.1/CarRest.zip) 
+[中文 README](./README_zh.md)
 
-![CatRest 使用演示](./video.gif)
+Download: [CarRest.zip](https://github.com/timfaner/CatRest/releases/download/0.1/CarRest.zip)
 
-如果你喜欢 CatRest，欢迎给这个项目点个 Star。  
-也可以来 X / Twitter 找我：[@cyberpigeonb](https://x.com/cyberpigeonb)
+![CatRest demo](./video.gif)
 
-## 怎么运行
+If CatRest makes your day a little better, please give the project a Star.  
+You can also follow me on X / Twitter: [@cyberpigeonb](https://x.com/cyberpigeonb)
 
-需要 macOS 13+，并安装 Xcode Command Line Tools 或 Xcode。
+## Run It
 
-在项目根目录运行：
+You need macOS 13+ and Xcode Command Line Tools or Xcode.
+
+From the project root:
 
 ```bash
 ./script/build_and_run.sh
 ```
 
-运行后，CatRest 会出现在菜单栏。点击猫咪图标就能开始使用。
+CatRest will show up in your menu bar. Click the cat icon to get started.
 
-## 怎么用
+## How To Use
 
-点一下菜单栏里的猫咪，选择“开始”。  
-默认先专注 25 分钟，然后休息 5 分钟。休息时间到，猫咪会铺满屏幕提醒你别硬撑。
+Click the cat in the menu bar, then choose "Start".  
+By default, CatRest gives you 25 minutes of focus time and 5 minutes of rest time. When it is break time, the cat takes over your screen so you actually stop staring at your work.
 
-想换节奏也很简单：
+Want a different rhythm?
 
-- “工作时长”：改专注多久。
-- “休息时长”：改休息多久。
-- “开机启动”：让猫咪每天自动上班。
-- “退出 CatRest”：今天先放猫下班。
+- "Work Duration": change how long you focus.
+- "Rest Duration": change how long you rest.
+- "Launch at Login": let the cat clock in automatically.
+- "Quit CatRest": send the cat home for the day.
 
-## 开发命令
+## Development
 
 ```bash
 swift build
 swift run CatRest
 ```
 
-打包并启动：
+Build and launch the app bundle:
 
 ```bash
 ./script/build_and_run.sh
 ```
 
-快速测试一轮超短番茄钟：
+Run a very short smoke cycle:
 
 ```bash
 ./script/build_and_run.sh --smoke-cycle
 ```
 
-## 小尾巴
+## Tiny Pitch
 
-CatRest 很简单：开始专注，到点休息，休息完继续。  
-你负责写东西，猫咪负责把你从椅子上劝起来。
+CatRest is simple: start focusing, take a break, then keep going.  
+You do the work. The cat handles the chair-escape negotiations.
