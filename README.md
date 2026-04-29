@@ -3,6 +3,8 @@
 一个住在 macOS 菜单栏里的猫咪番茄钟。  
 专注一会儿，猫咪就会跳出来提醒你休息一下。
 
+点击下载➡️ [CarRest.zip](https://github.com/timfaner/CatRest/releases/download/0.1/CarRest.zip) 
+
 ![CatRest 使用演示](./video.gif)
 
 如果你喜欢 CatRest，欢迎给这个项目点个 Star。  
