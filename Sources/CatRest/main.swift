@@ -1288,7 +1288,7 @@ private final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate
         image.isTemplate = true
 
         statusItem.button?.image = image
-        statusItem.button?.imagePosition = .imageOnly
+        statusItem.button?.imagePosition = .imageLeading
     }
 
     private func configureAppIcon() {
@@ -1341,16 +1341,20 @@ private final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate
     }
 
     private func updateStatus(phase: Phase, remaining: Int) {
-        statusItem.button?.title = ""
-
         switch phase {
         case .idle:
+            statusItem.button?.title = ""
             statusItem.button?.toolTip = L10n.idle
         case .work:
-            statusItem.button?.toolTip = "\(L10n.work) \(formatTime(remaining))"
+            let status = "\(L10n.work) \(formatTime(remaining))"
+            statusItem.button?.title = status
+            statusItem.button?.toolTip = status
         case .rest:
-            statusItem.button?.toolTip = "\(L10n.rest) \(formatTime(remaining))"
+            let status = "\(L10n.rest) \(formatTime(remaining))"
+            statusItem.button?.title = status
+            statusItem.button?.toolTip = status
         case .restComplete:
+            statusItem.button?.title = L10n.restDone
             statusItem.button?.toolTip = L10n.restDone
         }
     }
